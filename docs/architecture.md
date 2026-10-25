@@ -45,3 +45,9 @@ Application availability, data durability, and disaster recovery are separate co
 The lab uses off-host database backups, but not every application has a fully tested independent recovery procedure.
 
 The diagram is intentionally sanitized and does not contain internal addresses or authentication details.
+
+## Automated incident monitoring
+
+A scheduled Python worker evaluates six infrastructure health conditions every five minutes, records incident transitions in PostgreSQL and exposes active/resolved incidents through read-only FastAPI routes. The dashboard displays those results; the worker operates without a browser session.
+
+[Monitoring design, tests, and limits](incident-monitoring.md)

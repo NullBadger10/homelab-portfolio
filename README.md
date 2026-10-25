@@ -42,6 +42,18 @@ Built a web-based infrastructure dashboard using FastAPI, PostgreSQL, Nginx, and
 
 [Architecture overview](docs/architecture.md)
 
+### Automated Infrastructure Incident Monitoring
+
+Extended the dashboard with an unattended Python monitoring service, PostgreSQL incident history and recovery tracking.
+
+- Six health checks for backup age, job results, telemetry freshness and disk utilization
+- Five-minute `systemd` scheduling independent of the web browser
+- Deduplicated open incidents with automatic recovery timestamps
+- Read-only FastAPI endpoints and dashboard incident history
+- Verified incident creation, deduplication and recovery using an isolated test table
+
+[Monitoring architecture and verification](docs/incident-monitoring.md)
+
 ### Immich Photo Cloud
 
 Deployed Immich for self-hosted photo and video management using Docker and Debian network storage.
@@ -78,6 +90,7 @@ Linux administration, Windows, Hyper-V, Docker, PostgreSQL, Bash, PowerShell, Py
 ## Documentation
 
 - [Infrastructure Architecture](docs/architecture.md)
+- [Automated Incident Monitoring](docs/incident-monitoring.md)
 - [PostgreSQL Backup and Recovery](docs/backup-and-recovery.md)
 - [Project Roadmap](docs/roadmap.md)
 
