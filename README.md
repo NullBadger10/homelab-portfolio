@@ -92,7 +92,6 @@ Linux administration, Windows, Hyper-V, Docker, PostgreSQL, Bash, PowerShell, Py
 - [Infrastructure Architecture](docs/architecture.md)
 - [Automated Incident Monitoring](docs/incident-monitoring.md)
 - [PostgreSQL Backup and Recovery](docs/backup-and-recovery.md)
-- [Project Roadmap](docs/roadmap.md)
 
 ## Engineering Approach
 
